@@ -36,6 +36,108 @@ Welcome! This repository tracks my journey from **junior** to **pleno** backend
 
 ---
 
+## 📘 Phase‑by‑Phase Guides
+
+### Phase 1 – Language & Runtime Mastery *(12 Jun → 09 Jul)*
+
+**Goal:** move from *“writing code that works”* to *“writing code that’s fast, safe and idiomatic.”*
+
+1. **Advanced JavaScript (ES 2025) & TypeScript deep‑dive** – generics, conditional types, decorators.
+2. **Node internals** – event loop, libuv thread‑pool, streams/back‑pressure, clustering.
+3. **Asynchronous patterns** – Promises, async iterators, worker‑threads, `MessageChannel`.
+
+*Project*: build a CLI that scrapes an API concurrently, streams results to a file and shows a real‑time progress bar.
+
+*(Why first? 97 % of websites rely on JS/TS; mid‑level roles expect deep runtime knowledge.)*
+
+---
+
+### Phase 2 – Data & Persistence *(10 Jul → 01 Aug)*
+
+**Goal:** design efficient schemas, pick the right storage engine and master data access patterns.
+
+1. **PostgreSQL advanced** – multi‑column indexes, CTEs, query plans.
+2. **Prisma ORM** – patterns, zero‑downtime migrations.
+3. **NoSQL** – MongoDB document modelling, Redis caching & pub/sub.
+
+*Project*: refactor the Phase 1 API to persist in Postgres and add Redis cache with automatic invalidation.
+
+---
+
+### Phase 3 – Design & Architecture *(02 Aug → 29 Aug)*
+
+**Goal:** structure codebases that scale in size and complexity.
+
+1. **Domain‑Driven Design** – entities, value objects, aggregates, bounded contexts.
+2. **Hexagonal / Clean Architecture** – ports & adapters, dependency inversion.
+3. **SOLID principles** – applied within domain layer; key patterns (Factory, Strategy, Circuit‑Breaker).
+
+*Project*: split the monolith into npm workspaces (`@core/domain`, `@infra/http`, etc.) and publish an ADR.
+
+---
+
+### Phase 4 – Quality, Testing & Security *(30 Aug → 17 Sep)*
+
+**Goal:** guarantee correctness and harden the system against common threats.
+
+1. **Testing strategy** – Jest unit, Supertest integration, Pact contract.
+2. **Mutation testing** – Stryker with ≥ 90 % score.
+3. **Web security** – OWASP Top 10, helmet, JWT/OAuth 2.1 hardening.
+
+*Project*: create a GitHub Actions pipeline that fails on coverage/mutation regression and runs a ZAP baseline scan.
+
+---
+
+### Phase 5 – Performance & System Design *(18 Sep → 10 Oct)*
+
+**Goal:** make the service observable, cache‑friendly and horizontally scalable.
+
+1. **Caching patterns** – Redis LRU, CDN cache‑tag, TTL tuning.
+2. **Queues & async workflows** – BullMQ basics, Kafka overview.
+3. **Observability** – pino logs, OpenTelemetry traces, Prometheus/Grafana metrics.
+
+*Project*: load‑test with k6 to 100 k req/s and tune until P95 latency < 150 ms.
+
+---
+
+### Phase 6 – Cloud & DevOps *(11 Oct → 07 Nov)*
+
+**Goal:** ship reliably to the cloud using containers, IaC and GitOps.
+
+1. **Containerisation** – Docker multi‑stage builds; Compose.
+2. **Kubernetes fundamentals** – pods, deployments, services, ingress.
+3. **Infrastructure as Code** – Terraform/Pulumi for AWS; start AWS SAA prep.
+4. **GitOps & SRE** – ArgoCD blue‑green deploy, SLI/SLO and incident run‑books.
+
+*Project*: deploy the system to EKS with blue‑green rollout and live Grafana dashboards.
+
+---
+
+### Phase 7 – AI & LLMOps *(08 Nov → 10 Dec)*
+
+**Goal:** integrate and operate large language models from Node services.
+
+1. **LLM foundations** – transformers, embeddings, fine‑tune vs RAG.
+2. **LangChain.js & LangGraph** – agent orchestration, tool‑calling, memory.
+3. **Self‑hosting models** – run Llama 3 or Mistral locally via Ollama + `llama‑cpp` bindings.
+4. **Vector stores & guardrails** – pgvector / Qdrant, prompt evaluation.
+
+*Project*: deliver a gRPC Doc‑Chat micro‑service (RAG) with tracing and metrics.
+
+---
+
+### Phase 8 – Polyglot Sprint *(11 Dec → 24 Dec)*
+
+**Goal:** gain basic fluency in a second backend language.
+
+1. **Language tour** – Java (Spring Boot 3) *or* Go 1.23.
+2. **gRPC client** – generate and call Doc‑Chat service.
+3. **Benchmarking** – compare latency & throughput against the Node client.
+
+*Project*: ship a utility client and publish a short performance report.
+
+---
+
 ## 🗂️ Issues Tracker
 
 Below you can jump directly to the open issue for each phase:
