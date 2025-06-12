@@ -51,4 +51,23 @@ Below you can jump directly to the open issue for each phase:
 
 > Tip: add these issues to a GitHub Project board for kanban-style tracking.
 
+---
+
+## 📦 Solution Repositories
+
+Each phase will be solved in its **own repository**. Links will be added here as soon as the repos are created:
+
+| Phase | Repository |
+|-------|------------|
+| 1 | _TBD_ |
+| 2 | _TBD_ |
+| 3 | _TBD_ |
+| 4 | _TBD_ |
+| 5 | _TBD_ |
+| 6 | _TBD_ |
+| 7 | _TBD_ |
+| 8 | _TBD_ |
+| 9 | _TBD_ |
+
+Update this table by replacing **_TBD_** with the repository URL once the corresponding phase is underway.
 
