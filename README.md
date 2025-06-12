@@ -48,7 +48,6 @@ Below you can jump directly to the open issue for each phase:
 - [Phase 6 — Cloud & DevOps](https://github.com/gabriellimf/studies-roadmap/issues/6)
 - [Phase 7 — AI & LLMOps](https://github.com/gabriellimf/studies-roadmap/issues/7)
 - [Phase 8 — Polyglot Sprint](https://github.com/gabriellimf/studies-roadmap/issues/8)
-- Phase 9 — Soft Skills & Wrap‑up (to be created later)
 
 > Tip: add these issues to a GitHub Project board for kanban-style tracking.
 
